@@ -1,0 +1,36 @@
+@import "./css/colors.scss";
+
+.entity {
+  border-radius: 4px;
+  margin: 0;
+  padding: 0 2px;
+  &.draft {
+    border-style: dashed;
+  }
+}
+
+.person {
+  background-color: rgba($color-person, 0.4);
+  border: 1px solid $color-person;
+
+  &.draft {
+    background-color: rgba($color-person, 0.1);
+  }
+}
+
+.hashtag {
+  background-color: rgba($color-hashtag, 0.4);
+  border: 1px solid $color-hashtag;
+
+  &.draft {
+    background-color: rgba($color-hashtag, 0.1);
+  }
+}
+
+.relation {
+  background-color: rgba($color-relation, 0.4);
+  border: 1px solid $color-relation;
+  &.draft {
+    background-color: rgba($color-relation, 0.1);
+  }
+}

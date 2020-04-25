@@ -1,0 +1,68 @@
+@import "./css/colors.scss";
+
+.person {
+  ul {
+    background-color: rgba($color-person, 0.1);
+    .selected {
+      background-color: $color-person;
+    }
+  }
+}
+
+.hashtag {
+  ul {
+    background-color: rgba($color-hashtag, 0.1);
+    .selected {
+      background-color: $color-hashtag;
+    }
+  }
+}
+
+.relation {
+  ul {
+    background-color: rgba($color-relation, 0.1);
+    .selected {
+      background-color: $color-relation;
+    }
+  }
+}
+
+.entityList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  background-color: #fff;
+  display: none;
+  border: 1px dashed #000;
+
+  &.person {
+    border-color: $color-person;
+  }
+
+  &.hashtag {
+    border-color: $color-hashtag;
+  }
+
+  &.relation {
+    border-color: $color-relation;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 0 3px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+}
+
+.noResults {
+  font-style: italic;
+  em {
+    font-weight: bold;
+  }
+}
